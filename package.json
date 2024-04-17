@@ -7,6 +7,7 @@
   "targets": {
     "main": false
   },
+  "browserslist": "> 0.5%",
   "type": "module",
   "scripts": {
     "start": "node server.js",

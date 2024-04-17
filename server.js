@@ -39,6 +39,7 @@ process.on('unhandledRejection', (err) => {
   });
 });
 
+// Heroku specific
 process.on('SIGTERM', () => {
   console.log('👋 SIGTERM RECEIVED. Shutting down gracefully');
   server.close(() => {

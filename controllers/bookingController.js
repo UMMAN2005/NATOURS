@@ -1,6 +1,5 @@
 import Tour from '../models/tourModel.js';
 import catchAsync from '../utils/catchAsync.js';
-import AppError from '../utils/appError.js';
 import Stripe from 'stripe';
 import Booking from '../models/bookingModel.js';
 import User from '../models/userModel.js';
@@ -99,4 +98,4 @@ const getAllBookings = getAll(Booking);
 const updateBooking = updateOne(Booking);
 const deleteBooking = deleteOne(Booking);
 
-export { getCheckoutSession, createBookingCheckout, webhookCheckout };
+export { getCheckoutSession, webhookCheckout };

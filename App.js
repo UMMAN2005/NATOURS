@@ -24,7 +24,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-app.enable('trust proxy');
+// app.enable('trust proxy'); // Heroku specific
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
