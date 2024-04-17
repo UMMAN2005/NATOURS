@@ -1,6 +1,7 @@
 {
   "name": "starter",
   "version": "1.0.0",
+  "distDir": "public",
   "description": "Natours project with Express.js",
   "main": "App.js",
   "targets": {
