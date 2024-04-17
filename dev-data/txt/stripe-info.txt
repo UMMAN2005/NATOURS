@@ -1,0 +1,21 @@
+So when I submit my payment in Postman, the payment does not display in my Stripe dashboard. This is because Stripe made a lot of changes since this video was uploaded.
+
+
+
+The session object that is returned in the success response is also a completely different to what we see in the video.
+
+If you look closely, you will see an URL property. This is a very long URL, and most of it is a token string.
+
+If you CTRL+Click (Win) or Command + Click (Mac) this link, it will open up your checkout page in your browser. This should have all the Natours branding on it if you followed the previous lesson as well as the tour name, summary and price.
+
+Within the Stripe docs, they provide us with 3 test card numbers that we can use:
+
+To test successful payments use: 4242 4242 4242 4242
+To test declined payments use: 4000 0000 0000 0002
+To test authorized payments (EU) use:  4000 0000 0000 3220
+
+- Enter any future date for the expiry date.
+- Enter any 3 numbers for the security code.
+- Enter any name in the name field.
+
+When you submit the payment using one of these test cards, it will show up in your dashboard under payments.
